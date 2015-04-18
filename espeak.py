@@ -1,8 +1,6 @@
 ___author___ = 'Ozgur'
-import random
 
-
-print ("###e-Mre Speaker v1.0###")
+print ("###e-mre Speaker v1.0###")
 
 speakList = ['Kankii', 'Kankii', 'Kankiiii', 'Dota', 'Prophet', 'Panda',
  			'Kankii bunlarla da kreplere yatarsan adam degilsin kankii.',
