@@ -1,15 +1,17 @@
-___author___ = 'Ozgur'
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-print ("###e-mre Speaker v1.0###")
+___author___ = 'ozgur'
 
-speakList = ['Kankii', 'Kankii', 'Kankiiii', 'Dota', 'Prophet', 'Panda',
- 			'Kankii bunlarla da kreplere yatarsan adam degilsin kankii.',
- 			'Kanki naptın?', 'Faynayt sıktı be kankii.', 
- 			'Olm ben o adamla bira içtim.', 'Aynen kanki aynen.', 'aynen',
+from gtts import gTTS
+
+speakList = ['Kankaa', 'Kankaa', 'Kanka devreyi ne yaptın?', 'Dota Kanka', 'Prophet', 'Panda',
+ 			'Kanki bunlarla da kreplere yatarsan adam degilsin kanki.',
+ 			'Kanki naptın?', 'Faynayt sıktı be kanki.', 
+ 			'Aynen kanka.', 'Aynen kanki aynen.', 'aynen',
  			 'aynen', 'aynen', 'aynen', 'aynen', 'aynen kanki aynen', 'aynen',
  			 'aynen']
 
+tts = gTTS(text=' '.join(speakList), lang='tr')
 
-for i in speakList:
-	print (i)
-	input()
+tts.save("emrebot4.mp3")
